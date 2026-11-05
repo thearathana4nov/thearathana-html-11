@@ -33,6 +33,7 @@
         <a href="#about" style="text-decoration: none;">About</a>
         <a href="#section" style="text-decoration: none;">Id section</a>
         <a href="#float" style="text-decoration: none;">Float-R</a>
+        <a href="#animation" style="text-decoration: none;">Animation</a>
     </div>
     <h1>Profile</h1>
 
@@ -379,6 +380,77 @@
         <div class="item c">Learn C++</div>
         <div class="item python">Learn Python</div>
     </div>
+    <br><br>
+    <hr>
+    <h4 id="animation">Welcome to learning class of Animation!</h4>
+
+    <div class="animetion">Animatin!</div>
+
+    <p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+    <br>
+    <hr>
+    <h4>Welcome to learning class of 2D transformation!</h4>
+
+    <div class="box20">
+        <i>"Work hard in silence. Let your success make the noise."</i>
+    </div>
+    <br><br>
+
+    <div class="box21">
+        <i>"Dream big, stay humble, and never stop learning."</i>
+    </div>
+    <br>
+    <hr>
+
+
+    <h4>Welcome to learning class of 3D transformation!</h4>
+    <div class="container">
+        <div class="box10"><img class="f82" src="f82.png" alt=""></div>
+    </div>
+    <br>
+    <hr>
+
+    <h4>Welcome to learning transitions of HTML5!</h4>
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <script>
+        let number = 0;
+        let direction = 1;
+
+        setInterval(function () {
+
+            number += direction;
+
+            if (number >= 100) {
+                direction = -1;
+            }
+
+            if (number <= 0) {
+                direction = 1;
+            }
+
+            document.querySelector(".click").innerHTML = number + "%";
+
+        }, 50);
+    </script>
+    <div class="click">Hover</div>
+    <hr>
+    <h4>Cubic Bezier Curve Anatomy !</h4>
+    <p>Hover over the div element below, to see the Cubic Bezier Curve Anatomy effect:</p>
+    <div id="cubic">Cubic</div>
+    <br>
+    <hr>
+
+    <h4>CSS animation-direction Property</h4>
+
+    <p>The animation-direction property specifies whether an animation should be played forwards, backwards or in
+        alternate cycles. The following example uses the value "alternate" to make the animation run forwards first,
+        then backwards:</p>
+
+    <div id="floatImage"><img class="tom" src="tom.png" alt="">
+    </div>
+
+
 
 
 </body>

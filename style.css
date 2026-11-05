@@ -2,7 +2,7 @@
     text-align: center;
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 20px;
     align-items: center;
     margin: 0 auto;
     justify-content: center;
@@ -12,7 +12,7 @@
     background-color: hsl(0, 6%, 91%);
     padding: 10px;
     border-radius: 20px;
-
+    font-size: 8px;
 }
 
 h1 {
@@ -68,9 +68,11 @@ h4 {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-right: 150px;
-    margin-left: 150px;
     color: hsl(105, 8%, 79%);
+    font-size: 10px;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+    white-space: normal;
 }
 
 .text5 {
@@ -97,11 +99,12 @@ h2 {
     padding: 3px;
     background-color: hwb(240 70% 29%);
     border-radius: 30px;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 15%;
+    margin-right: 15%;
     color: #ffffff;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+    font-size: 8px;
 }
 
 
@@ -298,4 +301,201 @@ p.ex6 {
     color: #d7d7d9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
+}
+
+.animetion {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    /*animation-delay: 2s;*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+@keyframes boxAnimation {
+    0% {
+        background-color: rgb(15, 132, 171);
+    }
+
+    25% {
+        background-color: #b7d22d;
+    }
+
+    50% {
+        background-color: hwb(317 3% 44%);
+    }
+
+    100% {
+        background-color: #6fbb2c;
+    }
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box20 {
+    width: 150px;
+    height: 150px;
+    background-color: oklab(81.879% 0.00214 0.00057);
+    border: 0px solid black;
+    box-shadow: 5px 5px 3px #888888;
+    /*transform: translate(50px,100px);*/
+    /* transform: rotate(20deg); */
+    /*transform: rotate(-20deg);*/
+    /*transform: scale(1,2);*/
+    /*transform: scaleX(2);*/
+    /* transform: scaleY(0.5); */
+    /*transform: skewX(20deg);*/
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: oklab(33.326% 0.00049 -0.0017);
+    text-align: center;
+
+}
+
+.box21 {
+    width: 150px;
+    height: 150px;
+    background-color: hsl(0, 6%, 90%);
+    border: 0px solid black;
+    box-shadow: 5px 5px 2px #888888;
+    /*transform: translate(50px,100px);*/
+    /*transform: rotate(20deg);*/
+    transform: rotate(-20deg);
+    /*transform: scale(1,2);*/
+    /*transform: scaleX(2);*/
+    /*transform: scaleY(0.5);*/
+    /*transform: skewX(20deg);*/
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: -80px;
+    font-family: sans-serif;
+    color: hsl(240, 2%, 20%);
+    text-align: center;
+
+}
+
+.container {
+    width: 180px;
+    height: 230px;
+    border: 1px solid lab(49.19% 1.53 0.54);
+    margin: 30px;
+    perspective: 600px;
+    background-color: oklab(64.407% -0.00364 0.00798);
+    ;
+    box-shadow: 5px 5px 2px #888888;
+    margin: 0 auto;
+}
+
+.box10 {
+    width: 100%;
+    height: 100%;
+    background-color: #064d06;
+    line-height: 180px;
+    text-align: center;
+    font-size: 20px;
+    /* transform: rotateX(45deg); */
+    transform: rotateY(45deg);
+    /* transform: rotateZ(45deg); */
+    transform: translateZ(-100px);
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: #959393;
+
+}
+
+.f82 {
+    width: 100%;
+    height: 100%;
+}
+
+.click {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(38, 129, 203);
+    transition: width 5s linear;
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 50px;
+}
+
+.click:hover {
+    width: 100%;
+    background-color: #0f317a;
+    color: white;
+}
+
+
+#cubic {
+    width: 100px;
+    height: 100px;
+    background-color: hwb(223 4% 39%);
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cubic:hover {
+    width: 300px;
+    height: 300px;
+    background-color: #0c6666;
+    transform: rotate(540deg);
+}
+
+div#floatImage {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+    animation-direction: alternate;
+    font-size: 30px;
+}
+
+@keyframes myAnimation {
+    0% {
+
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+
+        left: 300px;
+        top: 0px;
+    }
+
+    50% {
+
+        left: 300px;
+        top: 200px;
+    }
+
+    75% {
+
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.tom {
+    width: 100%;
 }
